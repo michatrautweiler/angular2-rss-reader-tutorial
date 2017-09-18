@@ -15,4 +15,5 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <hook src="scripts/angular2app.js" type="before_prepare" />
 </widget>

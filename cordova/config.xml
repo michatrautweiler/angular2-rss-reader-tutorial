@@ -15,10 +15,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-	
-	<!-- Build and prepare the Angular 2 application. -->
-    <hook type="before_prepare" src="scripts/angular2app.js"/>
-	
+    <hook src="scripts/angular2app.js" type="before_prepare" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
@@ -26,6 +23,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <engine name="android" spec="^6.2.3" />
     <engine name="browser" spec="^4.1.0" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
 </widget>
